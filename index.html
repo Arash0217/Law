@@ -1,55 +1,66 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>خطرات استفاده از اتوکلیکر و اسکریپت</title>
+    <title>Stylish Image Viewer</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
-        h1 { color: #c0392b; }
-        p { line-height: 1.6; font-size: 18px; }
-        .warning { background-color: #ffeaa7; border-left: 6px solid #d35400; padding: 10px; margin: 20px 0; }
-        .hidden { display: none; }
-        button { background-color: #3498db; color: white; border: none; padding: 10px 15px; cursor: pointer; }
-        button:hover { background-color: #2980b9; }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #d4edda; /* سبز خاص برای پس‌زمینه */
+            color: #155724; /* رنگ متن متناسب */
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #c3e6cb; /* سبز روشن برای هدر */
+            border-bottom: 2px solid #155724; /* خط زیرین هدر */
+        }
+        .header button {
+            background-color: #28a745; /* سبز خاص برای دکمه */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .header button:hover {
+            background-color: #218838; /* سبز تیره‌تر برای حالت هاور */
+        }
+        img {
+            max-width: 90%;
+            height: auto;
+            margin-top: 20px;
+            border: 5px solid #c3e6cb; /* قاب سبز برای تصویر */
+            border-radius: 10px;
+        }
+        .image-name {
+            margin: 20px 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #155724; /* سبز متناسب با متن */
+        }
     </style>
 </head>
 <body>
 
-<h1>⚠️ خطرات استفاده از اتوکلیکر و اسکریپت ⚠️</h1>
-<div class="warning">
-    <strong>🚨 هشدار!</strong> استفاده از اتوکلیکرها و اسکریپت‌ها می‌تواند خطراتی به همراه داشته باشد. احتمال بن شدن حساب کاربری شما وجود دارد.
-</div>
-<p>اگر شما از این ابزارها به صورت نادرست یا بیش از حد استفاده کنید، احتمال بن شدن شما بیشتر می‌شود. ❌</p>
-<p>ما هیچ مسئولیتی در قبال بن شدن یا نشدن شما نداریم. هرگونه استفاده از این ابزارها به عهده خود شما است و ما به هیچ عنوان مسئولیتی در قبال عواقب آن نداریم. ⚠️</p>
-<p>به یاد داشته باشید که ریسک بن شدن بیشتر به نوع استفاده شما از اسکریپت‌ها بستگی دارد. 🔍</p>
+    <div class="header">
+        <button onclick="history.back()">Go Back</button>
+        <h1>Not Usdt</h1>
+    </div>
 
-<form id="consentForm">
-    <label>
-        <input type="checkbox" id="consent" required>
-        شرایط را خوانده‌ام و ریسک را قبول می‌کنم. ✔️
-    </label>
-    <br><br>
-    <button type="submit">✅ تأیید</button>
-</form>
-
-<div id="message" class="hidden">
-    <h2>🔗 لینک دانلود اسکریپت:</h2>
-    <p><a href="https://github.com/Arash0217/Heh/blob/main/not-autoclicker.user.js">اینجا کلیک کنید</a></p>
-</div>
-
-<div id="tutorial" class="hidden">
-    <h2>📚 آموزش استفاده از اسکریپت:</h2>
-    <p><a href="https://example.com/tutorial">اینجا کلیک کنید</a></p>
-</div>
-
-<script>
-    document.getElementById('consentForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        document.getElementById('message').classList.remove('hidden');
-        document.getElementById('tutorial').classList.remove('hidden');
-    });
-</script>
+    <div>
+        <!-- Replace 'image.jpg' with the actual name of your image file -->
+        <img src="Picsart_25-01-07_11-07-43-097.png" alt="Image">
+        <div class="image-name">ساعت معرفی: ۱۱:۰۰ در ۱۸ دی ۱۴۰۳</div>
+    </div>
 
 </body>
 </html>
